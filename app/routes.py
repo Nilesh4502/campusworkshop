@@ -27,8 +27,8 @@ def update_status(task_id):
             db_helper.update_status_entry(task_id, data["status"])
             result = {'success': True, 'response': 'Status Updated'}
         else:
-            db_helper.update_status_entry(task_id,"In Progress")
-            result = {'success': True, 'response': 'Nothing Updated'}
+            db_helper.update_status_entry(task_id,"Completed")
+            result = {'success': True, 'response': 'Status Updated'}
     except:
         result = {'success': False, 'response': 'Something went wrong'}
 
